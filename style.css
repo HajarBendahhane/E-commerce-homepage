@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"League" ;
+    src: url('fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family:"Mon" ;
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family:"Serif" ;
+    src: url('PTSerif-Regular.ttf');
+}
+body{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-family:"League";
+    color:hsl(0, 0%, 50%);
+    font-size: 16px;
+}
+h1{
+    font-family: "Mon";
+    font-weight: 700;
+}
+h3{
+    font-family: 'Mon';
+    padding-bottom:10px;
+}
+
+#upLeft{
+    height:100%;
+    width:55%;
+}
+#upRight{
+    padding: 60px;
+}
+#up{
+    height:75vh;
+    display: flex;
+    flex-direction: row; 
+}
+#upRight{
+    width:400px;
+}
+#down{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 40vh;
+}
+#downMiddle{
+    padding:40px;
+    width:380px
+
+}
+#image{
+    max-height: 100%;
+    width:100%;
+}
