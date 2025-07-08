@@ -12,55 +12,130 @@
     src: url('fonts/Montserrat-VariableFont_wght.ttf');
 }
 @font-face {
-    font-family:"Serif" ;
-    src: url('PTSerif-Regular.ttf');
+    font-family: "Style";
+    src: url('fonts/StyleScript-Regular.ttf');
 }
-body{
-    height:100%;
-    display: flex;
-    flex-direction: column;
-}
-p{
-    font-family:"League";
-    color:hsl(0, 0%, 50%);
-    font-size: 16px;
-}
-h1{
-    font-family: "Mon";
-    font-weight: 700;
-}
-h3{
-    font-family: 'Mon';
-    padding-bottom:10px;
-}
-
-#upLeft{
-    height:100%;
-    width:55%;
-}
-#upRight{
-    padding: 60px;
-}
-#up{
-    height:75vh;
-    display: flex;
-    flex-direction: row; 
-}
-#upRight{
-    width:400px;
-}
-#down{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    height: 40vh;
-}
-#downMiddle{
-    padding:40px;
-    width:380px
-
-}
-#image{
-    max-height: 100%;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 1fr;
+    grid-template-rows: 1.3fr 0.3fr 1fr;
+    height: 130vh;
     width:100%;
 }
+.main{
+    background-color: black;
+    background-image: url('room-homepage-master/images/desktop-image-hero-1.jpg');
+    grid-column:1/3 ;
+    grid-row: 1/3;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    margin-left:30px ;
+    margin-top: 20px;
+
+}
+.main-nav-links{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.main-nav-links a {
+    color:white;
+    text-decoration: none;
+    font-family: "Mon";
+    font-size: 12px;
+    font-weight: 600;
+}
+.main-nav-links a:hover{
+    color:gray;
+}
+ul{
+    list-style-type: none;
+}
+.main-text{
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+.main-text-arrows{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-text-arrows-btn{
+    cursor: pointer;
+    outline: none;
+    border:none;
+    background-color: black;
+
+}
+.main-image1{
+    background-image: url('room-homepage-master/images/image-about-dark.jpg');
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.main-image2{
+    background-image: url('room-homepage-master/images/image-about-light.jpg');
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.text{
+    background-color: white;
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+p{
+    font-size: 15px;
+}
+.main-text{
+    margin:0;
+    padding:80px;
+}
+.main-text-heading{
+    padding-bottom: 10px;
+    font-family:"Mon" ;
+    font-weight: 800;
+}
+.main-text-text{
+    color: hsl(0, 0%, 70%);
+    padding-bottom:15px ;
+    padding-top: 10px;
+}
+.main-text button{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Mon";
+}
+.main-text button:hover{
+    color:gray;
+}
+.text{
+    padding-left:80px;
+    padding-right: 80px;
+    padding-top: 80px;
+}
+.text-heading{
+    padding-bottom: 10px;
+    font-family:"Mon" ;
+    font-weight: 800;
+}
+.text-text{
+    padding-top:10px ;
+    color:hsl(0, 0%, 50%);;
+}
+.main-text-arrows-btn:hover{
+    background-color: gray;
+}
+
+
+

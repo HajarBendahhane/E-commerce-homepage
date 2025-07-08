@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IKEA HomePage</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="icon" href="room-homepage-master\images\favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" ></script>
+    <title>FrontEndMentor  ||  Homepage</title>
 </head>
+
 <body>
-    <div id="up">
-        <div id="upLeft">
-            <div id="bouttons">
-                <img src="">
-                <button>Home</button>
-                <button>Shop</button>
-                <button>About</button>
-                <button>contact</button>
-            </div>
-            <img id="image" src="room-homepage-master\images\image.png">
+    <div class="container">
+        <!-- container=[main + main-text + main-text-arrows + main-image1 + text + main-image2]-->
+        <div class="main">
+            <nav class="main-nav">
+                <img src="room-homepage-master\images\logo.svg" alt="logo" class="main-nav-logo">
+                <ul class="main-nav-links">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="upRight">
-            <h1>Discover innovative ways to decorate</h1>
-            <p>We provide unmatched quality, comfort, and style for property
+
+        <div class="main-text">
+            <h1 class="main-text-heading">Discover innovative ways to decorate</h1>
+            <p class="main-text-text">
+                We provide unmatched quality, comfort, and style for property
                 owners across the country. Our experts combine form and function
                 in bringing your vision to life. Create a room in your own style 
                 our collection and make your property a reflection of you and what
                 you love.
             </p>
-            <button id="shopnow">SHOP NOW</button>
-            <button>
-                <img id="left" src="room-homepage-master\images\icon-angle-left.svg">
+            <button class="main-text-btn">Shop now</button>
+        </div>
+
+        <div class="main-text-arrows">
+            <button class="main-text-arrows-btn" onclick="previous()">
+                <img src="room-homepage-master\images\icon-angle-left.svg">
             </button>
-            <button>
-                <img id="right" src="room-homepage-master\images\icon-angle-right.svg">
+            <button class="main-text-arrows-btn" onclick="next()">
+                <img src="room-homepage-master\images\icon-angle-right.svg">
             </button>
         </div>
-    </div>
-    <div id="down">
-        <div id="downLeft">
-            <img src="room-homepage-master\images\image-about-dark.jpg">
-        </div>
-        <div id="downMiddle">
-            <h3>About our furniture</h3>
-            <p>Our multifunctional collection blends design and function
+
+        <div class="main-image1"></div>
+        <div class="text">
+            <h2 class="text-heading">About our furniture</h2>
+            <p class="text-text">
+                Our multifunctional collection blends design and function
                 to suit your individual taste. Make each room unique, or pick 
                 a cohesive that best express your interests and what inspires you.
                 Find the furniture pieces you need, from traditional to contemporary 
@@ -50,9 +59,7 @@
                 you create your dream space.
             </p>
         </div>
-        <div id="downRight">
-            <img src="room-homepage-master\images\image-about-light.jpg">
-        </div>
-    </div>  
+        <div class="main-image2"></div>
+    </div>
 </body>
 </html>
